@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <form  id="search">
+            <i class="fa-solid fa-location-dot" style="color: #ed0202;"></i>
+            <input type="search" name="nome_cidade" id="nome_cidade" placeholder="Buscar Cidade">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div id="tempo" class="show">
+            <h1 id="title">
+
+            </h1>
+
+            <div id="infos">
+
+                        <div id="clima">
+                            <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+                                <p id="tempo_valor">
+                                    
+                                </p>
+                                <p id="tempo_descricao">
+                                    
+                                </p>
+                        </div>
+
+                        <div id="outras_infos">
+
+                            <div id="out_info">
+                                <i class="fa-solid fa-temperature-empty"></i>
+                                <h2>Pressão ao nível médio do mar:</h2>
+                                <p id="pres_mar">
+                                    
+                                </p>
+                            </div>
+
+                            <div id="out_info">
+                                <i class="fa-solid fa-temperature-high" style="color: #ff1100;"></i>
+                                <h2>Temperatura Máxima:</h2>
+                                <p id="temp_max">
+                                    
+                                </p>
+                            </div>
+
+                            <div id="out_info">
+                                <i class="fa-solid fa-temperature-low" style="color: #74C0FC;"></i>
+                                <h2>Temperatura Mínina:</h2>
+                                <p id="temp_min">
+                                    
+                                </p>
+                            </div>
+
+                            <div id="out_info">
+                                <i class="fa-solid fa-wind" style="color: #f2f2f2;"></i>
+                                <h2>Velocidade do Vento:</h2>
+                                <p id="temp_vel">
+                                    
+                                </p>
+                            </div>
+
+                            <div id="out_info">
+                                <i class="fa-solid fa-droplet" style="color: #74C0FC;"></i>
+                                <h2>Humidade:</h2>
+                                <p id="temp_hum">
+                                    
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="alert"></div>
+    <script src="src/script.js"></script>
+</body>
+</html>
